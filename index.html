@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Noto+Serif+KR:wght@600;700;900&display=swap" rel="stylesheet"/>
 <style>
-:root{--bg:#f7f8fc;--white:#fff;--surface2:#f0f2f8;--border:#e4e7f0;--border2:#d0d4e8;--accent:#2554c7;--accent-light:#eef1fc;--accent2:#0ea87e;--accent2-light:#e8f8f3;--accent3:#e05c2a;--accent3-light:#fdf0ea;--purple:#7c3aed;--purple-light:#f3eeff;--text:#1a1d2e;--text2:#4a4f6a;--muted:#9099b8;--shadow-sm:0 1px 3px rgba(30,40,100,.07);--shadow:0 4px 16px rgba(30,40,100,.09),0 1px 3px rgba(30,40,100,.06);--shadow-lg:0 12px 40px rgba(30,40,100,.13);--radius:14px}
+:root{--bg:#eaf5ec;--white:#fff;--surface2:#dff0e3;--border:#cfe5d4;--border2:#b8d6bf;--accent:#2554c7;--accent-light:#eef1fc;--accent2:#0ea87e;--accent2-light:#e8f8f3;--accent3:#e05c2a;--accent3-light:#fdf0ea;--purple:#7c3aed;--purple-light:#f3eeff;--text:#1a1d2e;--text2:#4a4f6a;--muted:#9099b8;--shadow-sm:0 1px 3px rgba(30,40,100,.07);--shadow:0 4px 16px rgba(30,40,100,.09),0 1px 3px rgba(30,40,100,.06);--shadow-lg:0 12px 40px rgba(30,40,100,.13);--radius:14px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--text);font-family:'Noto Sans KR',sans-serif;min-height:100vh;line-height:1.6;-webkit-tap-highlight-color:transparent}
@@ -451,11 +451,11 @@ import{initializeApp}from"https://www.gstatic.com/firebasejs/10.12.0/firebase-ap
 import{getAuth,GoogleAuthProvider,signInWithPopup,signOut,onAuthStateChanged}from"https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 import{getFirestore,collection,doc,addDoc,setDoc,deleteDoc,onSnapshot,query,orderBy,increment}from"https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-const app=initializeApp({apiKey:"AIzaSyD8TTAOCUQelTo-PIe6tsno3Llsr2JjCyA",authDomain:"aimo-20052.firebaseapp.com",projectId:"aimo-20052",storageBucket:"aimo-20052.firebasestorage.app",messagingSenderId:"905838846324",appId:"1:905838846324:web:2946669a4cb195e2decc21"});
+const app=initializeApp({apiKey:"AIzaSyD8TTAOCUQelTo-PIe6tsno3Llsr2JjCyA",authDomain:"aimo-20052.firebaseapp.com",projectId:"aimo-20052",storageBucket:"aimo-20052.firebasestorage.app",messagingSenderId:"905838846324",appId:"1:905838846324:web:73f9b0a4f538da44decc21"});
 const auth=getAuth(app),db=getFirestore(app);
 const PALETTE=['#7c3aed','#2554c7','#0ea87e','#e05c2a','#8b42cc','#d4970a','#1098c4','#c42573','#3d8b40'];
 const CAT_BG={'#7c3aed':'#f3eeff','#2554c7':'#eef1fc','#0ea87e':'#e8f8f3','#e05c2a':'#fdf0ea','#8b42cc':'#f5eefb','#d4970a':'#fdf6e0','#1098c4':'#e5f5fc','#c42573':'#fce8f2','#3d8b40':'#eaf5ea'};
-const getBg=c=>CAT_BG[c]||'#f0f2f8';
+const getBg=c=>CAT_BG[c]||'#dff0e3';
 const EMOJIS=['🏫','📋','📝','📊','📁','🗂️','💼','🖥️','📱','🌐','🔗','📧','📞','📡','🔧','⚙️','🔑','🔒','📌','📅','✅','🚀','💡','🎯','👨‍🏫','👩‍🏫','📚','🏆','📜','🖨️','📠','💰','🎓','🧾','🔔','📣','🗒️','📯','🗳️','📬','🖊️','📐','🧮','🎒'];
 let currentUser=null,isAdmin=false,editMode=false,activeTab='all',showStats=false,selColor=PALETTE[0],selEmoji=EMOJIS[0];
 let viewMode='board';
