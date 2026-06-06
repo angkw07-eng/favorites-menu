@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
-<title>청천</title>
+<title>Favorites Menu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Noto+Serif+KR:wght@600;700;900&display=swap" rel="stylesheet"/>
 <style>
-:root{--bg:#f7f8fc;--white:#fff;--surface2:#f0f2f8;--border:#e4e7f0;--border2:#d0d4e8;--accent:#2554c7;--accent-light:#eef1fc;--accent2:#0ea87e;--accent2-light:#e8f8f3;--accent3:#e05c2a;--accent3-light:#fdf0ea;--purple:#7c3aed;--purple-light:#f3eeff;--text:#1a1d2e;--text2:#4a4f6a;--muted:#9099b8;--shadow-sm:0 1px 3px rgba(30,40,100,.07);--shadow:0 4px 16px rgba(30,40,100,.09),0 1px 3px rgba(30,40,100,.06);--shadow-lg:0 12px 40px rgba(30,40,100,.13);--radius:14px}
+:root{--bg:#ffffff;--white:#fff;--surface2:#f5f0ff;--border:#ece5fb;--border2:#d4c5f9;--accent:#2554c7;--accent-light:#eef1fc;--accent2:#0ea87e;--accent2-light:#e8f8f3;--accent3:#e05c2a;--accent3-light:#fdf0ea;--purple:#7c3aed;--purple-light:#f3eeff;--text:#1a1d2e;--text2:#4a4f6a;--muted:#9099b8;--shadow-sm:0 1px 3px rgba(30,40,100,.07);--shadow:0 4px 16px rgba(30,40,100,.09),0 1px 3px rgba(30,40,100,.06);--shadow-lg:0 12px 40px rgba(30,40,100,.13);--radius:14px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--text);font-family:'Noto Sans KR',sans-serif;min-height:100vh;line-height:1.6;-webkit-tap-highlight-color:transparent}
@@ -16,12 +16,12 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans KR',sans-seri
 .loading-sub{font-size:.875rem;color:var(--muted)}
 .spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--purple);border-radius:50%;animation:spin .7s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-.top-banner{background:linear-gradient(135deg,#7c3aed,#6d28d9,#5b21b6);color:#fff;text-align:center;padding:7px 1rem;font-size:.78rem;font-weight:500;letter-spacing:.02em}
+.top-banner{background:#fde2e7;color:#7a1f3d;text-align:center;padding:7px 1rem;font-size:.78rem;font-weight:500;letter-spacing:.02em}
 header{background:var(--white);border-bottom:1.5px solid var(--border);position:sticky;top:0;z-index:200;box-shadow:var(--shadow-sm)}
 .header-inner{max-width:1280px;margin:0 auto;padding:0 2rem;height:68px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .logo{display:flex;align-items:center;gap:12px;flex-shrink:0}
-.logo-mark{width:40px;height:40px;background:#ffb380;border-radius:10px;display:grid;place-items:center;box-shadow:0 2px 8px rgba(255,140,60,.3)}
-.logo-mark svg{color:#7a3b00}
+.logo-mark{width:40px;height:40px;background:#ffb380;color:#7a3b00;border-radius:10px;display:grid;place-items:center;box-shadow:0 2px 8px rgba(255,140,60,.3)}
+.logo-mark svg{color:#fff}
 .logo-text-main{font-family:'Noto Serif KR',serif;font-size:1.15rem;font-weight:700;color:var(--text);line-height:1.2}
 .logo-text-sub{font-size:.7rem;color:var(--muted);font-weight:400}
 .header-center{flex:1;max-width:420px}
@@ -356,11 +356,11 @@ main{max-width:1280px;margin:0 auto;padding:2rem 2rem 4rem}
 }
 </style>
 </head><body>
-<div id="loadingScreen"><div class="loading-logo">청천淸川</div><div class="spinner"></div><div class="loading-sub">로딩 중...</div></div>
+<div id="loadingScreen"><div class="loading-logo">Favorites Menu</div><div class="spinner"></div><div class="loading-sub">로딩 중...</div></div>
 <div id="appRoot" style="display:none">
-<div class="top-banner">🤖 청천淸川: 학교 업무 링크 허브</div>
+<div class="top-banner">⭐ Favorites Menu</div>
 <header><div class="header-inner">
-  <div class="logo"><div class="logo-mark"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div><div><div class="logo-text-main">청천</div><div class="logo-text-sub">AI모음</div></div></div>
+  <div class="logo"><div class="logo-mark"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div><div><div class="logo-text-main">Favorites</div><div class="logo-text-sub">Menu</div></div></div>
   <div class="header-center"><div class="search-wrap"><svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="text" id="searchInput" placeholder="링크 이름, 설명 검색…" oninput="renderAll()"/></div></div>
   <div class="header-actions">
     <span class="edit-chip" id="editChip">✏️ 편집 중</span>
@@ -383,8 +383,8 @@ main{max-width:1280px;margin:0 auto;padding:2rem 2rem 4rem}
   </div>
 </div></header>
 <main>
-  <div class="page-hero"><div><h1 class="hero-title">청천(淸川) <span>AI모음</span></h1><p class="hero-sub"> 학교업무에 필요한 링크를 모아두고 있어요. 2026.3.7.오픈 후 계속 업글중 </p></div><div class="hero-stats"><div class="stat-box"><div class="stat-num" id="statCat">0</div><div class="stat-label">업무 분야</div></div><div class="stat-box"><div class="stat-num" id="statLink">0</div><div class="stat-label">등록 링크</div></div><div class="stat-box"><div class="stat-num" id="statClick">0</div><div class="stat-label">총 클릭</div></div></div></div>
-  <div class="notice-banner" id="noticeBanner"><span class="notice-icon">📢</span><div class="notice-text"><strong>안내</strong>&nbsp;업무와 관계없는 링크나 개인정보보호를 위해 필요시 링크를 삭제합니다.</div><button class="notice-close" onclick="closeNotice()">✕</button></div>
+  <div class="page-hero"><div><h1 class="hero-title">Favorites <span>Menu</span></h1><p class="hero-sub"> 자주 사용하는 링크를 한 곳에 모아둔 즐겨찾기 사이트입니다. </p></div><div class="hero-stats"><div class="stat-box"><div class="stat-num" id="statCat">0</div><div class="stat-label">업무 분야</div></div><div class="stat-box"><div class="stat-num" id="statLink">0</div><div class="stat-label">등록 링크</div></div><div class="stat-box"><div class="stat-num" id="statClick">0</div><div class="stat-label">총 클릭</div></div></div></div>
+  
   <div class="login-prompt" id="loginPrompt" style="display:none"><h2>🔐 로그인하면 링크를 직접 등록할 수 있어요</h2><p>Google 계정으로 로그인하면 누구나 링크를 추가할 수 있습니다.<br>본인이 올린 링크는 본인만 삭제할 수 있어요.</p><button class="btn btn-google" onclick="signInWithGoogle()"><svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a7.03 7.03 0 01-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09A7 7 0 015.49 12c0-.72.13-1.43.35-2.09V7.07H2.18A11 11 0 001 12c0 1.78.43 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Google 계정으로 로그인</button></div>
   <div class="admin-personal-section" id="adminPersonalSection"><div class="admin-section-header"><div class="admin-section-title">🔒 관리자 개인 링크 <span class="admin-lock-badge">ADMIN ONLY</span></div><div id="adminPersonalActions" style="display:none"><button class="btn btn-sm" style="background:rgba(232,255,71,.15);color:#e8ff47;border:1px solid rgba(232,255,71,.3);font-size:.78rem" onclick="openAddAdminLink()">+ 링크 추가</button></div></div><div class="admin-section-body"><div class="admin-link-grid" id="adminLinkGrid"></div></div></div>
   <div class="stats-panel" id="statsPanel"><div class="stats-panel-title">📊 링크 사용 현황 <span style="font-size:.75rem;color:var(--muted);font-weight:400;margin-left:auto">클릭 많은 순</span></div><div id="statsTableWrap"></div></div>
@@ -398,7 +398,7 @@ main{max-width:1280px;margin:0 auto;padding:2rem 2rem 4rem}
   </div>
   <div id="content"></div>
 </main>
-<footer class="site-footer"><p>청천(AI모음) &copy; 2025</p><div class="footer-dev"><span>Developed by 청천淸川 Choi Gwangcheul, Gurye Middle School with AIN</span></div></footer>
+<footer class="site-footer"><p>Favorites Menu &copy; 2025</p><div class="footer-dev"><span>Developed by Favorites Menu</span></div></footer>
 </div>
 <div class="modal-overlay" id="catPwModal"><div class="modal" style="max-width:360px"><div class="modal-header"><div class="modal-title" id="catPwModalTitle">🔒 분야 잠금</div><button class="modal-close" onclick="closeModal('catPwModal')">✕</button></div><p style="font-size:.875rem;color:var(--text2);margin-bottom:1.25rem;line-height:1.6" id="catPwModalDesc">이 분야의 링크를 열려면 비밀번호가 필요합니다.</p><div class="form-group"><label class="form-label">비밀번호</label><div class="pw-input-wrap"><input class="form-input" type="password" id="catPwInput" placeholder="••••" maxlength="30" onkeydown="if(event.key==='Enter')checkCatPw()"/></div><div class="pw-error" id="catPwError">비밀번호가 올바르지 않습니다.</div></div><div class="modal-footer"><button class="btn btn-outline" onclick="closeModal('catPwModal')">취소</button><button class="btn btn-primary" onclick="checkCatPw()">확인</button></div></div></div>
 <div class="toast-wrap" id="toastWrap"></div>
@@ -451,11 +451,11 @@ import{initializeApp}from"https://www.gstatic.com/firebasejs/10.12.0/firebase-ap
 import{getAuth,GoogleAuthProvider,signInWithPopup,signOut,onAuthStateChanged}from"https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 import{getFirestore,collection,doc,addDoc,setDoc,deleteDoc,onSnapshot,query,orderBy,increment}from"https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-const app=initializeApp({apiKey:"AIzaSyD8TTAOCUQelTo-PIe6tsno3Llsr2JjCyA",authDomain:"aimo-20052.firebaseapp.com",projectId:"aimo-20052",storageBucket:"aimo-20052.firebasestorage.app",messagingSenderId:"905838846324",appId:"1:905838846324:web:2946669a4cb195e2decc21"});
+const app=initializeApp({apiKey:"AIzaSyD8TTAOCUQelTo-PIe6tsno3Llsr2JjCyA",authDomain:"aimo-20052.firebaseapp.com",projectId:"aimo-20052",storageBucket:"aimo-20052.firebasestorage.app",messagingSenderId:"905838846324",appId:"1:905838846324:web:73f9b0a4f538da44decc21"});
 const auth=getAuth(app),db=getFirestore(app);
 const PALETTE=['#7c3aed','#2554c7','#0ea87e','#e05c2a','#8b42cc','#d4970a','#1098c4','#c42573','#3d8b40'];
 const CAT_BG={'#7c3aed':'#f3eeff','#2554c7':'#eef1fc','#0ea87e':'#e8f8f3','#e05c2a':'#fdf0ea','#8b42cc':'#f5eefb','#d4970a':'#fdf6e0','#1098c4':'#e5f5fc','#c42573':'#fce8f2','#3d8b40':'#eaf5ea'};
-const getBg=c=>CAT_BG[c]||'#f0f2f8';
+const getBg=c=>CAT_BG[c]||'#f5f0ff';
 const EMOJIS=['🏫','📋','📝','📊','📁','🗂️','💼','🖥️','📱','🌐','🔗','📧','📞','📡','🔧','⚙️','🔑','🔒','📌','📅','✅','🚀','💡','🎯','👨‍🏫','👩‍🏫','📚','🏆','📜','🖨️','📠','💰','🎓','🧾','🔔','📣','🗒️','📯','🗳️','📬','🖊️','📐','🧮','🎒'];
 let currentUser=null,isAdmin=false,editMode=false,activeTab='all',showStats=false,selColor=PALETTE[0],selEmoji=EMOJIS[0];
 let viewMode='board';
@@ -467,7 +467,7 @@ let categories=[],links=[],adminLinks=[],clickData={};
 let unsubCats,unsubLinks,unsubAdminLinks,unsubClicks;
 let currentPromptText='';
 
-window.closeNotice=()=>{document.getElementById('noticeBanner').style.display='none';sessionStorage.setItem('noticeClosed','1')};
+window.closeNotice=()=>{const n=document.getElementById('noticeBanner');if(n)n.style.display='none';sessionStorage.setItem('noticeClosed','1')};
 if(sessionStorage.getItem('noticeClosed')==='1')document.addEventListener('DOMContentLoaded',()=>{const n=document.getElementById('noticeBanner');if(n)n.style.display='none'});
 
 window.switchAccount=async()=>{
@@ -502,13 +502,13 @@ function updateUserUI(){
 }
 
 function startListeners(){
-  unsubCats=onSnapshot(query(collection(db,'categories'),orderBy('order','asc')),s=>{categories=s.docs.map(d=>({id:d.id,...d.data()}));if(!categories.length)seedDefaultCategories();renderAll()});
-  unsubLinks=onSnapshot(query(collection(db,'links'),orderBy('createdAt','desc')),s=>{links=s.docs.map(d=>({id:d.id,...d.data()}));renderAll()});
-  unsubAdminLinks=onSnapshot(query(collection(db,'adminLinks'),orderBy('createdAt','desc')),s=>{adminLinks=s.docs.map(d=>({id:d.id,...d.data()}));renderAdminSection()});
-  unsubClicks=onSnapshot(doc(db,'meta','clicks'),s=>{clickData=s.exists()?s.data():{};renderAll()});
+  unsubCats=onSnapshot(query(collection(db,'eng_categories'),orderBy('order','asc')),s=>{categories=s.docs.map(d=>({id:d.id,...d.data()}));if(!categories.length)seedDefaultCategories();renderAll()});
+  unsubLinks=onSnapshot(query(collection(db,'eng_links'),orderBy('createdAt','desc')),s=>{links=s.docs.map(d=>({id:d.id,...d.data()}));renderAll()});
+  unsubAdminLinks=onSnapshot(query(collection(db,'eng_adminLinks'),orderBy('createdAt','desc')),s=>{adminLinks=s.docs.map(d=>({id:d.id,...d.data()}));renderAdminSection()});
+  unsubClicks=onSnapshot(doc(db,'eng_meta','clicks'),s=>{clickData=s.exists()?s.data():{};renderAll()});
 }
 function stopListeners(){[unsubCats,unsubLinks,unsubAdminLinks,unsubClicks].forEach(u=>u&&u())}
-async function seedDefaultCategories(){for(const c of [{name:'교무·수업',color:'#7c3aed',order:0},{name:'행정·문서',color:'#0ea87e',order:1},{name:'생활지도',color:'#e05c2a',order:2},{name:'학부모·민원',color:'#8b42cc',order:3}])await addDoc(collection(db,'categories'),c)}
+async function seedDefaultCategories(){for(const c of [{name:'교무·수업',color:'#7c3aed',order:0},{name:'행정·문서',color:'#0ea87e',order:1},{name:'생활지도',color:'#e05c2a',order:2},{name:'학부모·민원',color:'#8b42cc',order:3}])await addDoc(collection(db,'eng_categories'),c)}
 
 function renderAll(){
   document.getElementById('statCat').textContent=categories.length;
@@ -636,7 +636,7 @@ function cardHTML(l,cat){
 window.showPromptPopup=id=>{const l=links.find(x=>x.id===id);if(!l)return;const aiSec=document.getElementById('promptAiSection');if(l.aiTool&&l.aiTool.trim()){aiSec.style.display='block';document.getElementById('promptAiText').textContent=l.aiTool}else{aiSec.style.display='none'}document.getElementById('promptText').textContent=l.prompt||'';currentPromptText=l.prompt||'';openM('promptModal')};
 window.copyPrompt=async()=>{try{await navigator.clipboard.writeText(currentPromptText);toast('프롬프트가 복사되었습니다 📋')}catch(e){toast('복사 실패','error')}};
 
-async function handleClick(e,id){if(e.defaultPrevented)return;try{await setDoc(doc(db,'meta','clicks'),{[id]:increment(1)},{merge:true})}catch(err){}}
+async function handleClick(e,id){if(e.defaultPrevented)return;try{await setDoc(doc(db,'eng_meta','clicks'),{[id]:increment(1)},{merge:true})}catch(err){}}
 
 window.catLockedClick=function(e,linkId,catId,url){
   e.preventDefault();
@@ -682,16 +682,16 @@ window.toggleStats=()=>{showStats=!showStats;document.getElementById('statsPanel
 function renderStatsPanel(){const sorted=[...links].sort((a,b)=>getClicks(b.id)-getClicks(a.id));const max=sorted.length?getClicks(sorted[0].id):0;if(!max){document.getElementById('statsTableWrap').innerHTML=`<div style="text-align:center;padding:2rem;color:var(--muted)">클릭 기록 없음</div>`;return}let h=`<table class="stats-table"><thead><tr><th style="width:44px">순위</th><th>링크</th><th style="width:110px">분야</th><th>빈도</th><th style="width:60px">횟수</th></tr></thead><tbody>`;sorted.forEach((l,i)=>{const cat=categories.find(c=>c.id===l.catId)||{name:'',color:'#ccc'};const n=getClicks(l.id),p=Math.round(n/max*100),rk=i<3?`rank-${i+1}`:'rank-n';h+=`<tr><td><span class="rank-badge ${rk}">${i+1}</span></td><td><strong>${l.emoji||''} ${escHtml(l.name)}</strong></td><td><span style="font-size:.82rem"><span style="width:8px;height:8px;border-radius:50%;background:${cat.color};display:inline-block;margin-right:4px"></span>${escHtml(cat.name)}</span></td><td><div class="bar-wrap"><div class="bar-track"><div class="bar-fill" style="width:${p}%;background:${cat.color}"></div></div></div></td><td><strong style="color:${cat.color}">${n}</strong></td></tr>`});h+=`</tbody></table>`;document.getElementById('statsTableWrap').innerHTML=h}
 
 let adminPw='04250425';
-async function loadAdminPw(){try{const snap=await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js").then(m=>m.getDoc(doc(db,'meta','adminConfig')));if(snap.exists()&&snap.data().password)adminPw=snap.data().password}catch(e){}}
+async function loadAdminPw(){try{const snap=await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js").then(m=>m.getDoc(doc(db,'eng_meta','adminConfig')));if(snap.exists()&&snap.data().password)adminPw=snap.data().password}catch(e){}}
 loadAdminPw();
-onSnapshot(doc(db,'meta','adminConfig'),snap=>{if(snap.exists()&&snap.data().password)adminPw=snap.data().password});
+onSnapshot(doc(db,'eng_meta','adminConfig'),snap=>{if(snap.exists()&&snap.data().password)adminPw=snap.data().password});
 
 window.openAdminModal=()=>{document.getElementById('pwInput').value='';document.getElementById('pwError').classList.remove('show');openM('adminModal');setTimeout(()=>document.getElementById('pwInput').focus(),200)};
 window.checkPw=()=>{if(document.getElementById('pwInput').value===adminPw){isAdmin=true;closeModal('adminModal');document.getElementById('adminLoginBtn').style.display='none';document.getElementById('adminBadge').classList.add('on');document.getElementById('editBtn').style.display='';document.getElementById('addLinkBtnTop').style.display='';document.getElementById('pwChangeBtn').style.display='';toast('관리자 모드 활성화 🔓','success');renderAll()}else{document.getElementById('pwError').classList.add('show');document.getElementById('pwInput').value='';document.getElementById('pwInput').focus()}};
 window.adminLogout=()=>{if(!confirm('관리자 모드 종료?'))return;isAdmin=false;editMode=false;document.getElementById('adminBadge').classList.remove('on');document.getElementById('adminLoginBtn').style.display='';document.getElementById('editBtn').style.display='none';document.getElementById('addLinkBtnTop').style.display='none';document.getElementById('pwChangeBtn').style.display='none';document.getElementById('editChip').classList.remove('on');document.getElementById('editBtn').textContent='⚙️ 편집';toast('관리자 모드 종료','info');renderAll()};
 
 window.openPwChangeModal=()=>{document.getElementById('pwOld').value='';document.getElementById('pwNew').value='';document.getElementById('pwNewConfirm').value='';const err=document.getElementById('pwChangeError');err.textContent='';err.classList.remove('show');openM('pwChangeModal');setTimeout(()=>document.getElementById('pwOld').focus(),200)};
-window.changePw=async()=>{const old=document.getElementById('pwOld').value,nw=document.getElementById('pwNew').value,nwc=document.getElementById('pwNewConfirm').value;const err=document.getElementById('pwChangeError');err.classList.remove('show');if(old!==adminPw){err.textContent='현재 비밀번호가 올바르지 않습니다.';err.classList.add('show');return}if(nw.length<8){err.textContent='새 비밀번호는 8자 이상이어야 합니다.';err.classList.add('show');return}if(nw!==nwc){err.textContent='새 비밀번호가 일치하지 않습니다.';err.classList.add('show');return}try{await setDoc(doc(db,'meta','adminConfig'),{password:nw},{merge:true});adminPw=nw;closeModal('pwChangeModal');toast('비밀번호가 변경되었습니다 🔑','success')}catch(e){err.textContent='오류: '+e.message;err.classList.add('show')}};
+window.changePw=async()=>{const old=document.getElementById('pwOld').value,nw=document.getElementById('pwNew').value,nwc=document.getElementById('pwNewConfirm').value;const err=document.getElementById('pwChangeError');err.classList.remove('show');if(old!==adminPw){err.textContent='현재 비밀번호가 올바르지 않습니다.';err.classList.add('show');return}if(nw.length<8){err.textContent='새 비밀번호는 8자 이상이어야 합니다.';err.classList.add('show');return}if(nw!==nwc){err.textContent='새 비밀번호가 일치하지 않습니다.';err.classList.add('show');return}try{await setDoc(doc(db,'eng_meta','adminConfig'),{password:nw},{merge:true});adminPw=nw;closeModal('pwChangeModal');toast('비밀번호가 변경되었습니다 🔑','success')}catch(e){err.textContent='오류: '+e.message;err.classList.add('show')}};
 window.toggleEdit=()=>{if(!isAdmin){openAdminModal();return}editMode=!editMode;document.getElementById('editChip').classList.toggle('on',editMode);document.getElementById('editBtn').textContent=editMode?'✅ 완료':'⚙️ 편집';document.getElementById('dragHint').classList.toggle('on',editMode);renderAll()};
 
 function buildEmojiGrid(){document.getElementById('emojiGrid').innerHTML=EMOJIS.map(e=>`<button class="emoji-btn ${e===selEmoji?'selected':''}" onclick="pickEmoji('${e}')">${e}</button>`).join('')}
@@ -714,23 +714,23 @@ window.saveLink=async()=>{
   try{
     if(isAdminLinkMode){
       const d={name,url,aiTool,prompt,desc,emoji:selEmoji,createdAt:Date.now()};
-      if(editingAdminLinkId){await setDoc(doc(db,'adminLinks',editingAdminLinkId),d,{merge:true});toast('수정 ✓')}
-      else{await addDoc(collection(db,'adminLinks'),d);toast('추가 ✓')}
+      if(editingAdminLinkId){await setDoc(doc(db,'eng_adminLinks',editingAdminLinkId),d,{merge:true});toast('수정 ✓')}
+      else{await addDoc(collection(db,'eng_adminLinks'),d);toast('추가 ✓')}
     }else{
       const catId=document.getElementById('fCat').value;
       let uData={};
       if(editingLinkId){const orig=links.find(x=>x.id===editingLinkId);if(orig&&isAdmin&&currentUser.uid!==orig.uploaderId)uData={uploaderId:orig.uploaderId,uploaderName:orig.uploaderName,uploaderPhoto:orig.uploaderPhoto};else uData={uploaderId:currentUser.uid,uploaderName:currentUser.displayName?.split(' ')[0]||'',uploaderPhoto:currentUser.photoURL||''}}
       else uData={uploaderId:currentUser.uid,uploaderName:currentUser.displayName?.split(' ')[0]||'',uploaderPhoto:currentUser.photoURL||''};
       const d={name,url,aiTool,prompt,desc,emoji:selEmoji,catId,isSecret,createdAt:Date.now(),...uData};
-      if(editingLinkId){await setDoc(doc(db,'links',editingLinkId),d,{merge:true});toast('수정 ✓')}
-      else{await addDoc(collection(db,'links'),d);toast('추가 ✓')}
+      if(editingLinkId){await setDoc(doc(db,'eng_links',editingLinkId),d,{merge:true});toast('수정 ✓')}
+      else{await addDoc(collection(db,'eng_links'),d);toast('추가 ✓')}
     }
     closeModal('linkModal');
   }catch(e){toast('오류: '+e.message,'error')}
 };
 
-window.deleteLink=async id=>{const l=links.find(x=>x.id===id);if(!l)return;const own=currentUser&&currentUser.uid===l.uploaderId;if(!isAdmin&&!own){toast('권한 없음','error');return}const who=isAdmin&&!own?` (등록: ${l.uploaderName||'?'})`:'';if(!confirm(`"${l.name}"${who} 삭제?`))return;try{await deleteDoc(doc(db,'links',id));toast('삭제')}catch(e){toast('오류','error')}};
-window.deleteAdminLink=async id=>{const l=adminLinks.find(x=>x.id===id);if(!l||!confirm(`"${l.name}" 삭제?`))return;try{await deleteDoc(doc(db,'adminLinks',id));toast('삭제')}catch(e){toast('오류','error')}};
+window.deleteLink=async id=>{const l=links.find(x=>x.id===id);if(!l)return;const own=currentUser&&currentUser.uid===l.uploaderId;if(!isAdmin&&!own){toast('권한 없음','error');return}const who=isAdmin&&!own?` (등록: ${l.uploaderName||'?'})`:'';if(!confirm(`"${l.name}"${who} 삭제?`))return;try{await deleteDoc(doc(db,'eng_links',id));toast('삭제')}catch(e){toast('오류','error')}};
+window.deleteAdminLink=async id=>{const l=adminLinks.find(x=>x.id===id);if(!l||!confirm(`"${l.name}" 삭제?`))return;try{await deleteDoc(doc(db,'eng_adminLinks',id));toast('삭제')}catch(e){toast('오류','error')}};
 
 function buildColorRow(){document.getElementById('colorRow').innerHTML=PALETTE.map(c=>`<div class="swatch ${c===selColor?'selected':''}" style="background:${c}" onclick="pickColor('${c}')"></div>`).join('')}
 window.pickColor=c=>{selColor=c;buildColorRow()};
@@ -779,8 +779,8 @@ window.toggleCatPwView=()=>{
   if(inp.type==='password'){inp.type='text';btn.textContent='🙈';}
   else{inp.type='password';btn.textContent='👁';}
 };
-window.saveCat=async()=>{if(!isAdmin)return;const name=document.getElementById('fCatName').value.trim();if(!name){toast('이름 필요','error');return}const lockPw=document.getElementById('fCatPw').value.trim();const isPersonal=document.getElementById('fCatPersonal').checked;try{if(editingCatId){await setDoc(doc(db,'categories',editingCatId),{name,color:selColor,lockPw,isPersonal},{merge:true});if(!lockPw)delete catUnlocked[editingCatId];toast('수정 ✓')}else{await addDoc(collection(db,'categories'),{name,color:selColor,order:categories.length,lockPw,isPersonal});toast('추가 ✓')}closeModal('catModal')}catch(e){toast('오류','error')}};
-window.deleteCat=async id=>{if(!isAdmin)return;const c=categories.find(x=>x.id===id);const n=links.filter(l=>l.catId===id).length;if(!confirm(`"${c?.name}" 삭제?\n링크 ${n}개도 삭제`))return;try{await deleteDoc(doc(db,'categories',id));for(const l of links.filter(l=>l.catId===id))await deleteDoc(doc(db,'links',l.id));if(activeTab===id)activeTab='all';toast('삭제')}catch(e){toast('오류','error')}};
+window.saveCat=async()=>{if(!isAdmin)return;const name=document.getElementById('fCatName').value.trim();if(!name){toast('이름 필요','error');return}const lockPw=document.getElementById('fCatPw').value.trim();const isPersonal=document.getElementById('fCatPersonal').checked;try{if(editingCatId){await setDoc(doc(db,'eng_categories',editingCatId),{name,color:selColor,lockPw,isPersonal},{merge:true});if(!lockPw)delete catUnlocked[editingCatId];toast('수정 ✓')}else{await addDoc(collection(db,'eng_categories'),{name,color:selColor,order:categories.length,lockPw,isPersonal});toast('추가 ✓')}closeModal('catModal')}catch(e){toast('오류','error')}};
+window.deleteCat=async id=>{if(!isAdmin)return;const c=categories.find(x=>x.id===id);const n=links.filter(l=>l.catId===id).length;if(!confirm(`"${c?.name}" 삭제?\n링크 ${n}개도 삭제`))return;try{await deleteDoc(doc(db,'eng_categories',id));for(const l of links.filter(l=>l.catId===id))await deleteDoc(doc(db,'eng_links',l.id));if(activeTab===id)activeTab='all';toast('삭제')}catch(e){toast('오류','error')}};
 
 window.setTab=id=>{activeTab=id;renderAll()};
 window.openM=id=>document.getElementById(id).classList.add('open');
@@ -922,7 +922,7 @@ window.catDrop = async (e, targetCatId) => {
   // Firestore 일괄 업데이트
   try {
     await Promise.all(reordered.map((cat, i) =>
-      setDoc(doc(db, 'categories', cat.id), { order: i }, { merge: true })
+      setDoc(doc(db, 'eng_categories', cat.id), { order: i }, { merge: true })
     ));
     toast('분야 순서가 변경되었습니다 ✓');
   } catch(err) {
@@ -1051,7 +1051,7 @@ async function reorderLinksInCat(dragId, targetId, catId){
   // order 값 일괄 저장 (간격 1000씩)
   try{
     await Promise.all(reordered.map((l,i)=>
-      setDoc(doc(db,'links',l.id),{linkOrder:i*1000},{merge:true})
+      setDoc(doc(db,'eng_links',l.id),{linkOrder:i*1000},{merge:true})
     ));
     const link = links.find(l=>l.id===dragId);
     const cat  = categories.find(c=>c.id===catId);
@@ -1068,7 +1068,7 @@ async function moveLinkToCat(linkId,newCatId){
     .filter(l=>l.catId===newCatId)
     .reduce((mx,l)=>Math.max(mx,(l.linkOrder??0)),0);
   try{
-    await setDoc(doc(db,'links',linkId),{catId:newCatId,linkOrder:maxOrder+1000},{merge:true});
+    await setDoc(doc(db,'eng_links',linkId),{catId:newCatId,linkOrder:maxOrder+1000},{merge:true});
     toast(`"${link.name}" → [${newCat.name}] 이동 ✓`,'success');
   }catch(err){toast('이동 실패: '+err.message,'error');}
 }
